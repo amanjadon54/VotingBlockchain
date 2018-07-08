@@ -1,7 +1,7 @@
 # VotingBlockchain
 
 Dependencies
-Install these prerequisites to follow along with the tutorial. See free video tutorial or a full explanation of each prerequisite.
+Install these prerequisites to follow 
 
 NPM: https://nodejs.org
 Truffle: https://github.com/trufflesuite/truffle
