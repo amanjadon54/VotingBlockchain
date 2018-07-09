@@ -18,9 +18,9 @@ contract Voter {
     
     constructor() public {
         // candidate = "Aman";
-        populateCandidates("candidate1");
-        populateCandidates("candidate2");
-        populateCandidates("candidate3");
+        populateCandidates("Narender Modi");
+        populateCandidates("Rahul Gandhi");
+        populateCandidates("Rampur Maniharan");
     }
     
     // voted event

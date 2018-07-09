@@ -88,24 +88,15 @@ App = {
           var voteCount = candidate[2].toNumber(); 
 
           // Render candidate Result
-          if(id===1)
-          {
+          if(id===1){
           $('#voteCount1').html(voteCount);
           }
-          else if(id===2)
-          {
+          else if(id===2){
             $('#voteCount2').html(voteCount);
           }
-          else if(id===3)
-          {
+          else if(id===3){
             $('#voteCount3').html(voteCount);
           }
-          // var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
-          // candidatesResults.append(candidateTemplate);
-
-          // Render candidate ballot option
-          // var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
-          // candidatesSelect.append(candidateOption);
         });
       }
       return voterInstance.voterMap(App.account);
@@ -137,6 +128,35 @@ App = {
 
 $(function() {
   $(window).load(function() {
-    App.init();
+    // App.init();
+    $("#aadhar").show();
   });
 });
+
+var validateAadhar=function(){
+  var enteredAadhar=$("#enteredAadhar").val();
+  var storedAadhar = new Object();
+  var age=0;
+  storedAadhar["AUFPP2629B"] = 22;
+  storedAadhar["AJHKA1221B"] = 17;
+  storedAadhar["ZXCVB3221B"] = 21;
+  storedAadhar["ZXCVB3221B"] = 16;
+  storedAadhar["QWERT1322B"] = 21;
+  storedAadhar["ASDFG5674B"] = 21;
+// for (var k in storedAadhar) {
+    // use hasOwnProperty to filter out keys from the Object.prototype
+    if (storedAadhar.hasOwnProperty(enteredAadhar)) {
+        // alert('key is: ' + enteredAadhar + ', value is: ' + );
+        age = storedAadhar[enteredAadhar];
+    // }
+}
+
+  $("#loader").show();
+  if(age>=18){
+    $("#wrongAadhar").hide();
+    $("#aadhar").hide();
+    $("#Election").show();
+    App.init();
+  }
+  else{$("#wrongAadhar").show();$("#loader").hide();}
+};

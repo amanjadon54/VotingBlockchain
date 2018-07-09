@@ -1,0 +1,67 @@
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+#aadhar{
+      display: inline;
+      float: right;
+  }
+
+tbody
+{
+    color:white;
+    font-size: 25px;
+}
+
+
+
+#voteCount1,#voteCount2,#voteCount3
+{
+    color:black;
+}
+
+#accountAddress
+{
+    font-size: 25px;
+}
+#labeladhaar
+{
+    font-size: 25px;
+}
+
+#enteredAadhar
+{
+   
+        display: block;
+        width: 400px;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#accountAddress
+{
+    background: yellow;
+}
+
+#loader
+{
+    font-size: 25px;
+}
