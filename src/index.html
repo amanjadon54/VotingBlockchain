@@ -25,7 +25,7 @@
               <p id="labeladhaar">Enter Aadhar Number: </p><input type="text" value="" id="enteredAadhar"/>
               
               <div id="wrongAadhar" style="display: none;">
-                  <p class="text-center">You are not eligible to vote or probably invalid Adhaar number.</p>
+                  <p class="text-center" id="error">You are not eligible to vote or probably invalid Adhaar number.</p>
                 </div>
 
               <input type="button" value="Submit" onclick="validateAadhar()" class="btn btn-primary"/>
@@ -45,9 +45,9 @@
                 </tr>
               </thead>
               <tbody>
-                  <tr><th>1</th><td>Narender Modi</td><td>BJP</td><td id="voteCount1">vote Count</td></tr>
-                  <tr><th>2</th><td>Rahul Gandhi</td><td>Congress</td><td id="voteCount2">vote Count</td></tr>
-                  <tr><th>3</th><td>Rampur Maniharan</td><td>BSP</td><td id="voteCount3">vote Count</td></tr>
+                  <tr><th>1</th><td>Narender Modi</td><td id="party">BJP</td><td id="voteCount1">vote Count</td></tr>
+                  <tr><th>2</th><td>Rahul Gandhi</td><td id="party">Congress</td><td id="voteCount2">vote Count</td></tr>
+                  <tr><th>3</th><td>Rampur Maniharan</td><td id="party">BSP</td><td id="voteCount3">vote Count</td></tr>
               </tbody>
             </table>
             <hr/>

@@ -19,9 +19,14 @@ tbody
     font-size: 25px;
 }
 
+#error
+{
+    color:red;
+}
 
 
-#voteCount1,#voteCount2,#voteCount3
+
+#voteCount1,#voteCount2,#voteCount3,#party
 {
     color:black;
 }
